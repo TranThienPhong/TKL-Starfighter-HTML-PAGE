@@ -105,37 +105,43 @@
 
   <main>
     <!-- ====================== HERO ====================== -->
-    <section class="scanlines relative overflow-hidden bg-[#080c12] pt-[29px] pb-[45px]">
-      <!-- ambient glows -->
-      <div
-        class="pointer-events-none absolute left-[calc(50%+140px)] top-[-200px] size-[700px] -translate-x-1/2 rounded-full blur-[40px]"
-        style="background: radial-gradient(circle, rgba(27,108,242,0.18) 0%, rgba(27,108,242,0) 70%);"></div>
-      <div class="pointer-events-none absolute bottom-[-80px] left-[72%] right-[8%] h-[380px] rounded-full blur-[40px]"
-        style="background: radial-gradient(circle, rgba(14,165,233,0.10) 0%, rgba(14,165,233,0) 70%);"></div>
+    <section class="relative overflow-hidden bg-[#080b09] pb-[64px]">
+      <!-- green vignette + film grain to match the briefing banner -->
+      <div class="pointer-events-none absolute inset-0"
+        style="background: radial-gradient(120% 75% at 50% -5%, rgba(38,70,46,0.55) 0%, rgba(8,11,9,0) 58%);"></div>
+      <div class="pointer-events-none absolute inset-0"
+        style="background: radial-gradient(120% 110% at 50% 35%, rgba(0,0,0,0) 42%, rgba(0,0,0,0.55) 100%);"></div>
+      <div class="pointer-events-none absolute inset-0 opacity-[0.05] mix-blend-screen"
+        style="background-image:url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E&quot;);">
+      </div>
 
-      <div class="col-hero relative flex flex-col items-center">
-        <!-- author chip -->
+      <!-- announcement bar -->
+      <div class="relative border-b border-[rgba(201,168,76,0.55)] bg-[rgba(0,0,0,0.25)]">
+        <div class="col-hero py-[12px]">
+          <p class="text-center font-grotesk text-[20px] font-bold italic tracking-[0.3px] text-[#eef2ef]">Robert
+            Kiyosaki&rsquo;s &ldquo;Financial 007&rdquo; Found It First</p>
+        </div>
+      </div>
 
-
-        <!-- headline -->
+      <!-- hero content -->
+      <div class="relative mx-auto flex w-full max-w-[1140px] flex-col items-center px-6 pt-[40px] text-center">
         <h1
-          class="-mb-[23px] w-full pt-[35px] text-center font-grotesk text-[88px] font-bold leading-[91.52px] tracking-[-2.2px] text-white">
-          The Company<br />Operating in<br /><span class="text-grad-blue">SpaceX&rsquo;s Shadow.</span>
-        </h1>
+          class="max-w-[1140px] font-grotesk text-[36px] font-bold leading-[1.08] tracking-[-1.4px] text-white sm:text-[50px] lg:text-[56px]">
+          Elon Musk Needs This Small Florida Company to Make SpaceX Profitable</h1>
 
-        <!-- subhead -->
-        <p
-          class="-mb-[23px] w-[680px] max-w-full pt-[40px] text-center font-grotesk text-[19px] leading-[32.3px] text-[rgba(216,227,240,0.72)]">
-          Before Wall Street finds it. Before the institutions move in. <br> The one company every rocket on earth
-          depends on
-          — and why it may be the most overlooked opportunity of the decade.
+        <p class="mt-[28px] max-w-[850px] font-grotesk text-[19px] leading-[31px] text-[rgba(216,227,240)]">One
+          little-known firm has solved the single biggest cost problem that <span
+            class="font-bold text-[#c9a84c]">SpaceX</span>, Blue Origin, and Rocket Lab have never been able
+          to
+          crack.
         </p>
 
-        <!-- stat bar -->
-
-
-        <!-- CTA -->
-
+        <blockquote class="mt-[34px] flex max-w-[800px] flex-col gap-[8px]">
+          <p class="font-grotesk text-[18px] leading-[28px] text-[rgba(216,227,240)]">&ldquo;We are twice as
+            fast as our competition, and ten times cheaper.&rdquo;</p>
+          <p class="font-grotesk text-[18px] font-bold leading-[22px] text-white">&mdash; The CEO of the Shadow
+            SpaceX, on the launch cheat code that changes everything.</p>
+        </blockquote>
       </div>
     </section>
 
