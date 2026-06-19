@@ -1,0 +1,57 @@
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  background: #080c12;
+}
+
+body {
+  font-family: '"Space Grotesk"', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Centered content column matching Figma's 1920px frame with 485px gutters (~950px column) */
+.col {
+  width: 100%;
+  max-width: 990px;
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+.col-hero {
+  width: 100%;
+  max-width: 1000px;
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+.col-cta {
+  width: 100%;
+  max-width: 940px;
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+/* Blue → cyan gradient text used for headline accents */
+.text-grad-blue {
+  background-image: linear-gradient(90deg, #3b89ff, #0ea5e9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Subtle 1px scanline texture overlay used across bands */
+.scanlines::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.05) 0, rgba(0, 0, 0, 0.05) 1px, transparent 1px, transparent 3px);
+}
+
+img {
+  display: block;
+}
